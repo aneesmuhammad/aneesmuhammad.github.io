@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anees Muhammad | profile</title>
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -14,9 +15,8 @@
 <header>
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#" onclick="openNav()">Skills</a></li>
+        <li><a href="#" onclick="openNav()">Projects</a></li>
     </ul>
 </nav>
 
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <a href="#" class="btn2">Download CV</a>
+    <a href="ANEES MUHAMMAD T K.pdf" class="btn2" target="_blank">Download CV</a>
     
 </div>
 
@@ -106,7 +106,14 @@
 
 
 
+ <div id="myNav" class="overlay">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div class="overlay-content">
 
+  
+     
+   </div>
+ </div>
 
 
 
@@ -123,11 +130,23 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
 let typed = new Typed(".auto-input",{
-strings: ["Anees Muhammad"," a Developer"," a Designer"," a Freelancer"," a Student"],
+strings: ["Anees Muhammad"," a Developer"," a Designer"," a Student"],
 typeSpeed:100,
 backSpeed:100,
 loop: true
 })
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+
 </script>
 
 
