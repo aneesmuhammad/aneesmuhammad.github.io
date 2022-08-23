@@ -15,7 +15,7 @@
 <header>
 <nav>
     <ul>
-        <li><a href="#" onclick="openNav()">Skills</a></li>
+        <li><a href="#" onclick="">Skills</a></li>
         <li><a href="#" onclick="openNav()">Projects</a></li>
     </ul>
 </nav>
@@ -122,6 +122,20 @@
      
 
    </div>
+
+
+   <div id="skill" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeskill()">&times;</a>
+      <div class="overlay-content">
+     
+     <br><br><br><br><br>
+   
+        
+   
+      </div>
+
+
+
  </div>
 
 
@@ -154,13 +168,15 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+function openskill() {
+  document.getElementById("skill").style.width = "100%";
+}
+
+function closeskill() {
+  document.getElementById("skill").style.width = "0%";
+}
 
 
 </script>
-
-
-
-
-
   </body>
 </html>
